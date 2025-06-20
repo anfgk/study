@@ -1,0 +1,30 @@
+11. import default란?
+default export(기본 내보내기)된 값을 가져올 때 사용하는 방식
+"이 파일의 대표 내보내기"를 의미
+
+11.1 기본 개념
+1) default export 하는 파일
+export default function dog() {
+  console.log("멍멍!");
+}
+
+2) import default로 불러오기
+import dog from './animal.js';
+
+dog();  // 출력: 멍멍!
+
+default export는 중괄호 없이 불러오고
+이름을 마음대로 지을 수 있음(dog, puppy, anything)
+
+11.2 default export vs named export 비교
+default export      export default 함수     import X from       한 파일에 하나만 가능
+named export        export const A = ...   import { A } from   여러 개 가능, 이름 일치 필수
+
+11.3 언제 default를 쓰나?
+파일에서 대표적인 기능 하나만 제공할 때 (예: 하나의 컴포넌트, 하나의 클래스 등)
+React 컴포넌트에서 주로 사용됨:
+// Button.jsx
+export default function Button() { ... }
+
+// App.jsx
+import Button from './Button';
