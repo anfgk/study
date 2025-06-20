@@ -1,0 +1,41 @@
+10. import와 export
+import와 export는 JavaScript(특히 ES6 이후)에서 모듈 시스템을 만들기 위해 사용하는 문법
+- export: 내보내기 – 다른 파일에서 사용할 수 있게 코드 공개
+- import: 가져오기 – 다른 파일의 코드를 현재 파일에서 사용
+
+10.1 export 종류 2가지
+1) Named Export (이름을 붙여 여러 개 export 가능)
+export const PI = 3.14;
+export function add(a, b) {
+  return a + b;
+}
+
+import { PI, add } from './utils.js';
+console.log(add(2, 3));  // 5
+
+2) Default Export (파일당 1개만 가능, 이름 자유롭게)
+export default function sayHi() {
+  console.log("Hello!");
+}
+
+import sayHi from './message.js';
+sayHi();  // Hello!
+
+10.2 export vs import
+내보내기    export const x = ...    변수/함수/클래스를 외부로 공개
+          export default ...      하나만 default로 지정 가능
+가져오기    import { x } from ...   이름 맞춰서 여러 개 가져오기 (named)
+          import x from ...       default export 가져오기
+
+10.3 함께 사용하기
+export const add = (a, b) => a + b;
+export const sub = (a, b) => a - b;
+export default function sayMath() {
+  console.log("Math is fun!");
+}
+
+import sayMath, { add, sub } from './math.js';
+
+sayMath();       // Math is fun!
+console.log(add(3, 2));  // 5
+console.log(sub(3, 2));  // 1
