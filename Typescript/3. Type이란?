@@ -1,0 +1,27 @@
+3. Type이란?
+변수나 값이 어떤 종류의 데이터인지를 정의한 것.
+타입을 알면 그 값이 어떤 연산을 할 수 있는지, 어떤 방식으로 다뤄야 하는지를 알 수 있다.
+
+3.1 자주 쓰는 기본 타입들
+number	    숫자 (정수, 소수 등)	              42, 3.14
+string	    문자열	                            "hello", '정하'
+boolean	    참/거짓	                            true, false
+null	    아무 값도 없음	                      null
+undefined	값이 정의되지 않음	                   undefined
+any	        아무 타입이나 가능(TypeScript 전용)	    어떤 값이든
+
+3.2 타입을 왜 신경 써야 하나요?
+에러 예방               이상한 값이 들어가는 걸 미리 막아줌
+코드 가독성 향상          다른 사람이 봐도 변수의 역할이 명확
+자동완성 기능 강화        IDE가 타입 정보를 보고 추천, 경고 등 제공
+
+3.3 예시
+JavaScript(타입X) 
+let name = "정하";  // string
+let age = 25;       // number
+let isStudent = true;  // boolean
+
+TypeScript(타입O)
+let name: string = "정하";
+let age: number = 25;
+let isStudent: boolean = true;
