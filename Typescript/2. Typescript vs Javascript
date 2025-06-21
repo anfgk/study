@@ -1,0 +1,11 @@
+2. Typescript vs Javascript
+TypeScript vs JavaScript 비교
+항목                JavaScript                     TypeScript
+언어 타입      동적 타입(Dynamic Typing)         정적 타입 (Static Typing)
+타입 검사      실행 중(runtime)에 오류 발생    컴파일 시(compile-time)에 오류 잡아줌
+파일 확장자             .js                    .ts (또는 .tsx for React)
+실행 방식    바로 브라우저 또는 Node.js에서 실행    컴파일해서 .js 파일로 만든 후 실행
+코드 예측        IDE 지원은 있지만 제한적     타입 정보로 인해 자동완성, 에러 감지가 훨씬 강력
+개발 규모          작은 프로젝트에 적합              중/대규모 프로젝트에 적합
+기본 제공 기능   표준 ECMAScript 기능 사용     인터페이스, 제네릭, 열거형 등 추가 기능 제공
+학습 곡선             배우기 쉬움             JS에 타입 개념 추가로 초반 진입장벽 있음
