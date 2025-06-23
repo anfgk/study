@@ -12,4 +12,5 @@ npm create vite@latest my-app -- --template react
 cd my-app
 npm install
 npm run dev
-Vite는 요즘 많이 쓰이는 빠른 프론트엔드 빌드 도구입니다. 빠른 실행 속도가 장점!
+Vite는 요즘 많이 쓰이는 빠른 프론트엔드 빌드 도구이다. 빠른 실행 속도가 장점!
+
