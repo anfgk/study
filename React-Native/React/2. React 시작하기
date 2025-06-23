@@ -1,0 +1,15 @@
+2. React 시작하기
+A방법. create-react-app(초보자 추천)
+npx create-react-app my-app
+cd my-app
+npm start
+위 명령어로 React 개발 환경이 자동 구성되고, http://localhost:3000에서 시작된다.
+- 장점: 설정할 게 없음 (Webpack, Babel 등 자동 구성)
+- 단점: 설정을 자유롭게 바꾸기 어려움
+
+B방법. Vite로 React 시작(빠르고 가벼움)
+npm create vite@latest my-app -- --template react
+cd my-app
+npm install
+npm run dev
+Vite는 요즘 많이 쓰이는 빠른 프론트엔드 빌드 도구입니다. 빠른 실행 속도가 장점!

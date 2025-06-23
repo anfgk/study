@@ -2,3 +2,25 @@
 React.js는 사용자 인터페이스(User Interface, UI)를 만들기 위한 JavaScript 라이브러리이다. 
 페이스북(Facebook)에서 개발했고, 지금도 페이스북과 오픈 소스 커뮤니티에 의해 유지·관리되고 있다.
 React는 싱글 페이지 애플리케이션이나 모바일 애플리케이션 개발에 사용될 수 있다.
+
+1.1 핵심 특징
+컴포넌트 기반 구조
+- UI를 작고 독립적인 컴포넌트로 나누어 개발
+- 각 컴포넌트는 재사용 가능하고, 다른 컴포넌트와 독립적으로 동작
+
+Virtual DOM
+- 실제 DOM 대신 Virtual DOM(가상의 DOM)을 사용하여, 필요한 부분만 빠르게 업데이트 → 성능 향상
+
+선언형 프로그래밍 (Declarative)
+- 원하는 UI 상태를 선언하면 React가 알아서 UI를 그 상태로 렌더링
+- 코드가 예측 가능하고 디버깅이 쉬움
+
+단방향 데이터 흐름 (One-way data binding)
+- 데이터는 부모 → 자식 방향으로 흐름
+- 데이터 관리가 더 명확하고 예측 가능
+
+1.2 React가 인기 있는 이유
+- SPA(Single Page Application) 구현에 최적화
+- 생태계가 풍부 (Next.js, Redux, React Router 등)
+- 많은 기업에서 사용 (Meta, Netflix, Airbnb, Uber 등)
+- 커뮤니티가 활발해 학습 자료도 풍부
