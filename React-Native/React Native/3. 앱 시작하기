@@ -1,0 +1,2 @@
+3. 앱 시작하기
+터미널 -> npx @react-native-community/cli@latest init 생성할 프로젝트 이름

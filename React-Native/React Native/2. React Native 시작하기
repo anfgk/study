@@ -6,7 +6,8 @@ React Native CLI        네이티브 기능 커스터마이징 가능, 실무에
 2.1 Expo로 React Native 시작하기(추천)
 사전준비
 Node.js 설치 👉 https://nodejs.org
-터미널 / VS Code
+터미널 -> homebrew 설치 -> 
+brew install node, brew install watchman
 
 1단계: Expo CLI 설치
 npm install -g expo-cli
