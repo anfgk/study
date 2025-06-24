@@ -1,0 +1,63 @@
+2. React Native 시작하기
+React Native를 시작하는 대표적인 방법은 2가지이다.
+Expo CLI                설치 쉬움, 빠른 시작, 초보자에게 추천
+React Native CLI        네이티브 기능 커스터마이징 가능, 실무에서 더 자주 사용
+
+2.1 Expo로 React Native 시작하기(추천)
+사전준비
+Node.js 설치 👉 https://nodejs.org
+터미널 / VS Code
+
+1단계: Expo CLI 설치
+npm install -g expo-cli
+
+2단계: 새 프로젝트 생성
+npx create-expo-app MyFirstApp
+cd MyFirstApp
+
+3단계: 앱 실행
+npx expo start
+
+=> QR코드 스캔하면 스마트폰에서 바로 앱 실행 가능 (Expo Go 앱 설치 필요)
+=> 또는 웹/안드로이드/iOS 에뮬레이터에서 실행 가능
+
+2.2 간단 예제 코드(App.js)
+import React from 'react';
+import { Text, View, StyleSheet } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Hello React Native!</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1, justifyContent: 'center', alignItems: 'center',
+  },
+  text: {
+    fontSize: 24, color: '#333',
+  },
+});
+
+2.3 React Native 주요 컴포넌트 소개
+View	    HTML의 div 같은 레이아웃 박스
+Text	    글자를 표시할 때 사용
+Image	    이미지 보여줄 때
+ScrollView	스크롤 가능한 영역
+TextInput	사용자 입력 필드
+Button	    기본 버튼 컴포넌트
+
+2.4 스타일링 방식 (CSS 아님!)
+React Native는 StyleSheet를 사용해 스타일을 정의한다.
+const styles = StyleSheet.create({
+  box: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'skyblue',
+  },
+});
+
+=> 스타일 속성은 camelCase 사용! (backgroundColor, fontSize 등)
