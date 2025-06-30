@@ -1,0 +1,38 @@
+2. 기본 속성
+TailwindCSS 주요 유틸리티 클래스 정리
+1. 레이아웃
+너비/높이 지정          	w-64, h-32, min-w-full, max-h-screen
+마진(m), 패딩(p)           m-4, mt-2, mx-auto, p-6, pl-3, px-2
+요소의 display 방식        block, inline-block, flex, grid, hidden
+Flexbox 방향 및 정렬       flex-row, items-center, justify-between
+포지션 및 위치 설정          relative, absolute, top-0, left-4, z-50
+
+2. 텍스트
+폰트 크기       text-sm, text-base, text-xl, text-4xl
+텍스트 색상      text-gray-700, text-white, text-red-500
+텍스트 정렬      text-left, text-center, text-right
+폰트 두께       font-light, font-medium, font-bold
+폰트 스타일      italic, underline, line-through
+
+3. 배경
+배경 색상 지정      bg-white, bg-gray-800, bg-blue-500
+배경 이미지 설정    bg-cover, bg-center, bg-no-repeat
+배경 그라데이션     bg-gradient-to-r from-purple-400 to-pink-500
+
+4. 테두리
+테두리 굵기        border, border-0, border-2
+테두리 색상        border-gray-300, border-red-500
+테두리 radius     rounded, rounded-md, rounded-full
+내부 요소 분할선    divide-x, divide-y, divide-gray-200
+
+5. 효과(Interaction)    
+호버        hover:bg-blue-600, hover:text-white
+포커스      focus:outline-none, focus:ring-2
+트랜지션    transition, duration-300, ease-in-out
+그림자      shadow, shadow-lg, shadow-md
+
+6. 기타
+커서        cursor-pointer, cursor-not-allowed
+불투명도     opacity-50, opacity-100
+z-index    z-10, z-50
+스크롤       overflow-auto, overflow-hidden, scroll-smooth
